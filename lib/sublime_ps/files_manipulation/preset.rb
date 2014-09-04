@@ -8,7 +8,11 @@ module SublimePS::FilesManipulation
       @preset_name = preset_name
     end
 
-    def file_content
+    def self.file_content(preset_name)
+      self.new(preset_name).load_file_content
+    end
+
+    def load_file_content
       if File.exists?(preset_path(@preset_name))
         JSON.parse(File.open(preset_path(@preset_name)).read)
       else
