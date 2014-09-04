@@ -14,7 +14,7 @@ module SublimePS
       sublime_preferences = FilesManipulation::SublimePreferences.new
       preferences_content = sublime_preferences.file_content
       preset_content      = FilesManipulation::Preset.file_content(preset_name)
-      preferences_content.merge!(preset_content) if preset_content
+      preferences_content.merge!(preset_content)
       sublime_preferences.set_content(preferences_content, preset_name)
     end
   end
