@@ -13,7 +13,7 @@ module SublimePS::FilesManipulation
     def set_content(content, preset_name)
       remove_preference_file_content
       add_set_preference_file_content(content)
-      puts "Preferences changed to preset '#{preset_name}' \e[32mOK\e[0m"
+      puts "Preferences changed to preset '#{preset_name}' \e[32m[OK]\e[0m"
     end
 
     private
