@@ -12,7 +12,12 @@ module SublimePS::FilesManipulation
     end
 
     def sublime_preferences_file_path
-      @conf_file[:sublime_preferences_path]
+      if File.exists?(@conf_file[:sublime_preferences_path])
+        @conf_file[:sublime_preferences_path]
+      else
+        puts "Sublime preferences file not find (see on #{@@path}) \e[31m[FAIL]\e[0m"
+        exit
+      end
     end
 
     private

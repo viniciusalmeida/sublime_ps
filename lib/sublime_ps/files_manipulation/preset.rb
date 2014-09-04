@@ -17,7 +17,7 @@ module SublimePS::FilesManipulation
         JSON.parse(File.open(preset_path(@preset_name)).read)
       else
         puts "Preset '#{@preset_name}' not find on #{@@path_dir} dir \e[31m[FAIL]\e[0m"
-        nil
+        exit
       end
     end
 
