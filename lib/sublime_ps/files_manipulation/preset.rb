@@ -23,8 +23,8 @@ module SublimePS::FilesManipulation
 
     private
 
-      def preset_path(preset_name)
-        "#{@@path_dir}/#{preset_name}.json"
-      end
+    def preset_path(preset_name)
+      "#{@@path_dir}/#{preset_name}.json"
+    end
   end
 end

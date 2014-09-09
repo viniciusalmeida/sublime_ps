@@ -22,24 +22,24 @@ module SublimePS::FilesManipulation
 
     private
 
-      def conf_file_exist?
-        File.exists?(@@path)
-      end
+    def conf_file_exist?
+      File.exists?(@@path)
+    end
 
-      def create_conf_file
-        FileUtils::mkdir_p("#{@@home_path}/.sublime_ps")
-        output = File.new(@@path, 'w')
-        output.puts(YAML.dump({ sublime_preferences_path: initial_sublime_preferences_path }))
-        output.close
-        puts "Create configuration file to sublime_ps (#{@@path}) \e[32m[OK]\e[0m"
-      end
+    def create_conf_file
+      FileUtils::mkdir_p("#{@@home_path}/.sublime_ps")
+      output = File.new(@@path, 'w')
+      output.puts(YAML.dump({ sublime_preferences_path: initial_sublime_preferences_path }))
+      output.close
+      puts "Create configuration file to sublime_ps (#{@@path}) \e[32m[OK]\e[0m"
+    end
 
-      def load_conf_file
-        YAML::load_file(@@path)
-      end
+    def load_conf_file
+      YAML::load_file(@@path)
+    end
 
-      def initial_sublime_preferences_path
-        "#{@@home_path}/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings"
-      end
+    def initial_sublime_preferences_path
+      "#{@@home_path}/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings"
+    end
   end
 end
