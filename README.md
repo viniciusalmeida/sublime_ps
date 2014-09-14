@@ -2,6 +2,10 @@
 
 A simple way to change preferences of SublimeText through a JSON file.
 
+![usage](usage.gif)
+
+See this preferences files: [light.json](https://github.com/viniciusalmeida/dotfiles/blob/master/sublime_ps/light.json) and [dark.json](https://github.com/viniciusalmeida/dotfiles/blob/master/sublime_ps/dark.json).
+
 ## Usage
 
 Install the ruby gem:
