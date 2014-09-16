@@ -1,6 +1,8 @@
-#Sublime PS
+#Sublime PS 
 
-A simple way to change preferences of SublimeText through a JSON file.
+[![Gem Version](https://badge.fury.io/rb/sublime_ps.svg)](http://badge.fury.io/rb/sublime_ps)
+
+The sublime_ps is a rubygem that injects specific settings on SublimeText preferences file.
 
 ![usage](usage.gif)
 
