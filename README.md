@@ -1,6 +1,6 @@
 #Sublime PS 
 
-[![Gem Version](https://badge.fury.io/rb/sublime_ps.svg)](http://badge.fury.io/rb/sublime_ps)
+[![Code Climate](https://codeclimate.com/github/viniciusalmeida/sublime_ps/badges/gpa.svg)](https://codeclimate.com/github/viniciusalmeida/sublime_ps) [![Gem Version](https://badge.fury.io/rb/sublime_ps.svg)](http://badge.fury.io/rb/sublime_ps)
 
 The sublime_ps is a rubygem that injects specific settings on SublimeText preferences file.
 
